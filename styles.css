@@ -1,5 +1,5 @@
 :root{
-    --clr-dark: #32021F;
+    --clr-dark: rgb(50, 2, 31);
     --clr-accent: #ED7D3A;
     --clr-light: #EBF5EE;/*#FFFCF9;*/ /* #EAE4CE;*/
 
@@ -139,8 +139,8 @@ svg {
 /*             HEADER             */
 
 .primary-header{
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .icon-nav-container{
@@ -230,7 +230,11 @@ body{
 }
 
 .main-content{
-  background-image: url("images/sitting.png");
+  background-image: linear-gradient(
+    rgba(50,2,31,0),
+    rgba(50,2,31,.5) 25%,
+    rgba(50,2,31,1) 40% ),
+    url("images/sitting.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
