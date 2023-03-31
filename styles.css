@@ -242,8 +242,8 @@ body{
 .main-body{
   display: flex;
   flex-direction: row;
-  margin-left: 132px;
-  padding-top: 130px;
+  margin-left: 300px;
+  padding-top: 100px;
 }
 
 
@@ -252,9 +252,9 @@ body{
   object-position: 70% 0%;
   border: var(--clr-accent) solid 5px;
   border-radius: 50%;
-  margin-left: 200px;
-  height: 650px;
-  width: 650px;
+  margin-left: 120px;
+  height: 550px;
+  width: 550px;
 }
 
 .button-holder{
@@ -265,7 +265,7 @@ body{
   text-decoration: none;
   width: 292px;
   height: 100px;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 
 p{
@@ -302,6 +302,8 @@ p{
 
 .title{
   position: relative;
+  margin-left: 200px;
+
 }
 
 .title::after{
@@ -309,14 +311,17 @@ p{
   background: var(--clr-accent);
   display:block;
   height: 10px;
-  width: 75%;
+  width: 25%;
   position:absolute;
   top:50%;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .about-content{
-  margin-top: 100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 }
