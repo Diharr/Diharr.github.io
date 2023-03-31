@@ -202,6 +202,11 @@ svg {
 }
 
 @media(max-width: 1000px){
+  .primary-header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .icon-nav-container{
     flex-direction: row;
     gap: 50px;
@@ -230,27 +235,37 @@ body{
 }
 
 .main-content{
-  background-image: linear-gradient(
-    rgba(50,2,31,0),
-    rgba(50,2,31,.5) 25%,
-    rgba(50,2,31,1) 40% ),
-    url("images/sitting.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .main-body{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 132px;
   padding-top: 130px;
 }
 
+
+.home-img{
+  object-fit: cover;
+  object-position: 70% 0%;
+  border: var(--clr-accent) solid 5px;
+  border-radius: 50%;
+  margin-left: 200px;
+  height: 650px;
+  width: 650px;
+}
+
+.button-holder{
+  display: flex;
+  justify-content: center;
+}
 .button-guy{
   text-decoration: none;
   width: 292px;
   height: 100px;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 
 p{
@@ -267,8 +282,6 @@ p{
       background-size:cover;
     }
     .main-body{
-      margin:0;
-      margin-top: 5%;
       justify-content: center;
       align-items:center;
     }
@@ -283,6 +296,9 @@ p{
   margin-left: 132px;
   margin-top:270px;
 }
+ .about>.button-guy{
+  margin-top: 150px;
+ }
 
 .title{
   position: relative;
@@ -298,18 +314,42 @@ p{
   top:50%;
   margin-left: 20%;
 }
+
+.about-content{
+  margin-top: 100px;
+}
+
+}
 @media(max-width: 1000px){
 
 }
 
   /*              Projects              */
   /*             Contacts me              */
-  .contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw 4vw
+}
 
-  }
+form{
+  display:flex;
+  flex-direction: column;
+  padding:20px;
+  width: 800px;
+}
+
+form > *{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#message{
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
 
 a{
   text-decoration: none;
