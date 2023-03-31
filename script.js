@@ -1,6 +1,11 @@
 const hamburger = document.querySelector(".hamburger");
 const headerBar = document.querySelector('.icon-nav-container');
+const buttons = document.querySelectorAll('.button-guy')
+const contactSection = document.querySelector('.contact')
 
+buttons.forEach( button => button.addEventListener('click', () => {
+    contactSection.scrollIntoView();
+} ))
 
 hamburger.addEventListener('click', e=>{
     console.log('button clicked');
