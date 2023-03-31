@@ -4,6 +4,12 @@
     <head>
         <link href="styles.css" rel="stylesheet">
         <title>Rashid Acker</title>
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Si_owP-dk1RdK1suW");
+   })();
+</script>
     </head>
         <header class="primary-header bg-accent">
             <div class="icon-nav-container">
@@ -35,7 +41,7 @@
             <div class="about  fw-light section font" id="about">
                 <h3 class="text-400 fw-medium title">About Me</h3>
                 <div class="about-content">
-                    <div class="about-text text-300">
+                    <div class="about-text t">
                         <p>
                             Behoti xacir totaton rem hema. Oso cuna xegayu denovon una! Fopu iteq muna apicomay fosuyur ireborel elamoro eler. Atasenon kocup hat tanocog cefolor ray! Vosuy ciba mavonu oqil baledor renola edotut ocaciwe rese oci. Ayabalen hetadut neyar si kic execatan rewie dopefi. Ogopi eyev ne ilu. Behoti xacir totaton rem hema. Oso cuna xegayu denovon una! Fopu iteq muna apicomay fosuyur ireborel elamoro eler. Atasenon kocup hat tanocog cefolor ray! Vosuy ciba mavonu oqil baledor renola edotut ocaciwe rese oci. Ayabalen hetadut neyar si kic execatan rewie dopefi. Ogopi eyev ne ilu.
                         </p>
@@ -55,13 +61,14 @@
             </div>
             <div class="contact text-light section font" id="contact">
                 <h5 class="title-center text-400 fw-regular"> Contact me </h5>
-                <form class="contact-form" onsubmit="sendEmail()">
-                    <input type="text" id="first-name" placeholder="First">
-                    <input type="text" id="last-name" placeholder="Last">
-                    <input type="text" id="email" placeholder="Email">
-                    <input type="text" id="message" placeholder="Message">
+                <form class="contact-form" id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <input type="text" name="first-name" placeholder="First">
+                    <input type="text" name="last-name" placeholder="Last">
+                    <input type="text" name="from-email" placeholder="Email">
+                    <input type="text" name="message" placeholder="Message">
                     <div class="button-holder">
-                        <button type="button" class="bg-accent button-guy" >Send</button>
+                        <button type="submit" class="bg-accent button-guy" value="Send" >Send</button>
                     </div>
                 </form>
             </div>
