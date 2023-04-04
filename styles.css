@@ -13,6 +13,7 @@
     --fw-light: 300;
 
     --fs-300: 20px;
+    --fs-350: 30px;
     --fs-400: 40px;
     --fs-450: 64px;
     --fs-500: 96px;
@@ -30,6 +31,7 @@
   {
     --fs-header: var(--fs-450);
     --fs-300: 35px;
+    --fs-350: 42px;
     --fs-400: 52px;
     --fs-450: 94px;
     --fs-500: 106px;
@@ -130,6 +132,9 @@ svg {
 .text-300{
   font-size: var(--fs-body);
 }
+.text-350{
+  font-size: var(--fs-350);
+}
 .text-400{
   font-size: var(--fs-nav);
 }
@@ -148,16 +153,16 @@ svg {
 /*             HEADER             */
 
 .primary-header{
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 2px;
+  padding-bottom: 2px; */
 }
 
 .icon-nav-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left:63px;
-  margin-right:63px;
+  margin-left:33px;
+  margin-right:33px;
 }
 
 .icon-container{
@@ -166,8 +171,8 @@ svg {
 }
 
 .icon{
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
   padding: 5px;
   transition:
   color 2s ease-in-out,
@@ -205,8 +210,8 @@ svg {
   top: 13px;
   right: 16px;
   display: none;
-  width: 75px;
-  height:75px;
+  width: 65px;
+  height:65px;
 
 }
 
