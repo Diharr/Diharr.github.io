@@ -68,10 +68,10 @@
                 <h5 class="title-center text-400 fw-regular"> Contact me </h5>
                 <form class="contact-form text-300" id="contact-form">
                     <input type="hidden" name="contact_number">
-                    <input type="text" name="first-name" placeholder="First">
-                    <input type="text" name="last-name" placeholder="Last">
-                    <input type="text" name="from-email" placeholder="Email">
-                    <input type="text" name="message" placeholder="Message" id="form-message">
+                    <input type="text" name="first-name" placeholder="First" required>
+                    <input type="text" name="last-name" placeholder="Last" required>
+                    <input type="text" name="from-email" placeholder="Email" required>
+                    <textarea type="text" name="message" placeholder="Message" id="form-message" required></textarea>
                     <div class="button-holder">
                         <button type="submit" class="bg-accent button-guy font fw-medium text-300" value="Send" >Send</button>
                     </div>
