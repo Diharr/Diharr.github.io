@@ -8,8 +8,8 @@
     --ff-body: var(--ff-primary);
     --ff-heading: var(-ff-primary);
 
-    --fw-medium: 500;
-    --fw-regular: 400;
+    --fw-medium: 700;
+    --fw-regular: 500;
     --fw-light: 300;
 
     --fs-300: 20px;
@@ -407,25 +407,13 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
   }
   .projects>.title{
-    margin: 0px;
+    margin-left: 250px;
   }
-  .projects > .title::before{
-      content:'';
-      background: var(--clr-accent);
-      display:block;
-      height: 10px;
-      width: 15%;
-      position:absolute;
-      top:50%;
-      margin-left: 65%;
-    }
-
     .projects > .title::after{
-      margin-left: 19%;
-      width: 15%;
+      margin-left: 13%;
+      width: 25%;
   }
   .project-container{
     display: flex;
@@ -434,9 +422,10 @@ p{
 
 
   .project{
+    position: relative;
     display:block;
-    height:800px;
     width: 600px;
+    height: 800px;
     margin-top: 50px;
     margin-left:40px;
     margin-right: 40px;
@@ -444,11 +433,27 @@ p{
   }
 
   .project img{
-    padding: 20px;
+    padding: 12px;
     height: 350px;
     width: 600px;
   }
 
+  .project a img {
+    margin-left: 25px;
+  }
+
+  .project .icon{
+    height: auto;
+    width: auto;
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+  }
+
+  .project-content  {
+    padding-left: 15px;
+    padding-bottom: 15px;;
+  }
   @media(max-width: 1000px){
     .projects>.title::after{
       width: 25%;
