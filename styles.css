@@ -163,6 +163,8 @@ svg {
   align-items: center;
   margin-left:33px;
   margin-right:33px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .icon-container{
