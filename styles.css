@@ -152,11 +152,6 @@ svg {
 
 /*             HEADER             */
 
-.primary-header{
-  /* padding-top: 2px;
-  padding-bottom: 2px; */
-}
-
 .icon-nav-container{
   display: flex;
   justify-content: space-between;
@@ -457,6 +452,9 @@ p{
     padding-bottom: 15px;;
   }
   @media(max-width: 1000px){
+    .projects>.title{
+      margin-left: 0px;
+    }
     .projects>.title::after{
       width: 25%;
       margin-left: 65%;
@@ -471,6 +469,11 @@ p{
     }
     .project{
       height: 1000px;
+      width: 700px;
+    }
+    .project img{
+      padding: 12px;
+      height: 390px;
       width: 700px;
     }
   }
