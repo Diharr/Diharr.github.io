@@ -3,7 +3,7 @@
     --clr-accent: #ED7D3A;
     --clr-light: #EBF5EE;/*#FFFCF9;*/ /* #EAE4CE;*/
 
-    --ff-primary: 'Kanit', sans-serif;
+    --ff-primary: 'Roboto', sans-serif;
 
     --ff-body: var(--ff-primary);
     --ff-heading: var(-ff-primary);
@@ -428,22 +428,35 @@ p{
     margin-left:40px;
     margin-right: 40px;
     background-color: var(--clr-accent);
+    border: solid var(--clr-light) 8px;
+    border-radius: .5%;
   }
+
 
   .project img{
     height: 350px;
     width: 600px;
+    border-radius: .5%;
+  }
+
+  .project h2 {
+    margin-top: 15px;
   }
 
   .project a img {
     margin-left: 25px;
   }
 
+  .project p {
+    margin-top: 15px;
+    
+  }
+
   .project .icon{
     height: auto;
     width: auto;
     position: absolute;
-    bottom: 1%;
+    bottom: -1.7%;
     left: 0%;
   }
 
