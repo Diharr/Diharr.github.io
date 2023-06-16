@@ -334,7 +334,7 @@ p{
 
 .about-img{
   object-fit: cover;
-  object-position: 70% 0%;
+  object-position: 0% 60%;
   border: var(--clr-accent) solid 5px;
   border-radius: 50%;
   margin-left: 120px;
